@@ -7,7 +7,7 @@
 
 TLDR:
 
-NASA's rover sends back data after conducting evolutionary gas analysis on the soil samples it collected. We need to model if given 10 compounds are present
+NASA's rover sends back data after conducting evolutionary gas analysis on the soil samples it collected. We need to model the data if given 10 compounds are present
 in the sample.
 
 The story so far:
@@ -39,6 +39,8 @@ We as Data scientists or Machine Learning practioners have to model this data to
 - used 10 Catboost classifiers to predict 10 targets (Binary classification fashion) on each dataset.
 - Caliberated every models predictions to better match the targets.
 - Stacked the predictions in simple average fashion.
+
+My best predictions are avg_preds.csv from caliberate and predict notebook with agg_logloss of 0.13 on private leaderboard.
 
 **Other things I have tried**
 - Nerual networks --> not very great for this competition
